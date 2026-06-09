@@ -4,58 +4,586 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <title>Web Appetizers</title>
 </head>
 <body>
+    <div class="container">
+        <h1>Web Appetizers</h1>
+        <br>
+        <h2>COMPLETE PLACEMENT PREP</h2>
+        <br>
+        <p class="subtitle">Web Dev + DSA + Quant &nbsp;|&nbsp; Build on June 10, 2026
+            &nbsp;|&nbsp; Free resources mapped to every topic</p>
 
-    <h1>Web Dev Languages</h1>
+        <div class="tabs">
+            <div class="tab active" onclick="show('dev',this)">🌐 Web Dev (4.5 mo)</div>
+            <div class="tab" onclick="show('dsa',this)">⚙️ DSA (4 mo)</div>
+            <div class="tab" onclick="show('quant',this)">🧮 Quant / Aptitude</div>
+            <div class="tab" onclick="show('timeline',this)">📅 Timeline</div>
+        </div>
 
-    <h2>Front-end</h2>
+        <!-- WEB DEV -->
+        <div id="dev" class="panel active">
+            <div class="tip">Everything below is the exact Sigma 12 web dev curriculum. Each topic links to a free
+                resource that covers the same material.</div>
 
-    <div class="section-block">
-        <h3 id="html">HTML</h3>
-        <p>HTML stands for HyperText Markup Language. It is the standard markup language for creating web pages and web
-            applications. HTML describes the structure of a web page semantically and originally included cues for the
-            appearance of the document.</p>
+            <div class="phase">
+                <div class="phase-header">Phase 1 — HTML & CSS Frontend</div>
+                <div class="topic-row">
+                    <div class="topic-name">What is the Web? How it works</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/kBEcOfmcpvg" target="_blank"><span
+                                class="badge b-yt">YT</span> Apna College – Web Basics</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">HTML – tags, structure, forms, tables</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/BsDoLVMnmZs" target="_blank"><span
+                                class="badge b-yt">YT</span> Apna College HTML Full Course</a><a class="res-link"
+                            href="https://developer.mozilla.org/en-US/docs/Learn/HTML" target="_blank"><span
+                                class="badge b-doc">Docs</span> MDN HTML</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">CSS – selectors, box model, specificity</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/ESnrn1kAD4E" target="_blank"><span
+                                class="badge b-yt">YT</span> Apna College CSS Full Course</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Flexbox & Grid</div>
+                    <div class="resources"><a class="res-link" href="https://flexboxfroggy.com/" target="_blank"><span
+                                class="badge b-prac">Practice</span> Flexbox Froggy</a><a class="res-link"
+                            href="https://cssgridgarden.com/" target="_blank"><span class="badge b-prac">Practice</span>
+                            CSS Grid Garden</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Responsive design & media queries</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/srvUrASNj0s" target="_blank"><span
+                                class="badge b-yt">YT</span> Kevin Powell – Responsive CSS</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Bootstrap – layouts & components</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/vpAJ0s5S2t0" target="_blank"><span
+                                class="badge b-yt">YT</span> Thapa Technical Bootstrap</a><a class="res-link"
+                            href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank"><span
+                                class="badge b-doc">Docs</span> Bootstrap 5 Docs</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Tailwind CSS CLI</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/UBOj6rqRUME" target="_blank"><span
+                                class="badge b-yt">YT</span> Traversy Media – Tailwind Crash Course</a><a
+                            class="res-link" href="https://tailwindcss.com/docs" target="_blank"><span
+                                class="badge b-doc">Docs</span> Tailwind Docs</a></div>
+                </div>
+            </div>
+
+            <div class="phase">
+                <div class="phase-header">Phase 2 — Core JavaScript</div>
+                <div class="topic-row">
+                    <div class="topic-name">Variables, data types, operators</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/ER9SspLe4Hg" target="_blank"><span
+                                class="badge b-yt">YT</span> Apna College JS Full Course</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Functions, scope, closures</div>
+                    <div class="resources"><a class="res-link" href="https://javascript.info/function-basics"
+                            target="_blank"><span class="badge b-doc">Docs</span> javascript.info – Functions</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">OOP in JS – classes, prototypes</div>
+                    <div class="resources"><a class="res-link" href="https://javascript.info/classes"
+                            target="_blank"><span class="badge b-doc">Docs</span> javascript.info – OOP</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">DOM manipulation & events</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/5fb2aPlgoys" target="_blank"><span
+                                class="badge b-yt">YT</span> Traversy – DOM Crash Course</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Event bubbling & delegation</div>
+                    <div class="resources"><a class="res-link" href="https://javascript.info/bubbling-and-capturing"
+                            target="_blank"><span class="badge b-doc">Docs</span> javascript.info – Bubbling</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Async JS – promises, async/await</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/PoRJizFvM7s" target="_blank"><span
+                                class="badge b-yt">YT</span> Traversy – Async JS</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">AJAX, Fetch API, Axios</div>
+                    <div class="resources"><a class="res-link" href="https://javascript.info/fetch"
+                            target="_blank"><span class="badge b-doc">Docs</span> javascript.info – Fetch API</a></div>
+                </div>
+            </div>
+
+            <div class="phase">
+                <div class="phase-header">Phase 3 — React (Frontend Framework)</div>
+                <div class="topic-row">
+                    <div class="topic-name">Functional components & JSX</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/RGKi6LSPDLU" target="_blank"><span
+                                class="badge b-yt">YT</span> Apna College React Series</a><a class="res-link"
+                            href="https://react.dev/learn" target="_blank"><span class="badge b-doc">Docs</span>
+                            Official React Docs</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Props & State management</div>
+                    <div class="resources"><a class="res-link"
+                            href="https://react.dev/learn/passing-props-to-a-component" target="_blank"><span
+                                class="badge b-doc">Docs</span> React – Props</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Hooks: useState, useEffect</div>
+                    <div class="resources"><a class="res-link" href="https://react.dev/reference/react"
+                            target="_blank"><span class="badge b-doc">Docs</span> React Hooks Reference</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Custom Hooks</div>
+                    <div class="resources"><a class="res-link"
+                            href="https://react.dev/learn/reusing-logic-with-custom-hooks" target="_blank"><span
+                                class="badge b-doc">Docs</span> React – Custom Hooks</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Material UI</div>
+                    <div class="resources"><a class="res-link" href="https://mui.com/material-ui/getting-started/"
+                            target="_blank"><span class="badge b-doc">Docs</span> MUI Docs</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Redux & Redux Toolkit (supplement)</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/1i04-A7kfFI" target="_blank"><span
+                                class="badge b-yt">YT</span> Codevolution – Redux Toolkit</a><a class="res-link"
+                            href="https://redux-toolkit.js.org/introduction/getting-started" target="_blank"><span
+                                class="badge b-doc">Docs</span> RTK Docs</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Git & GitHub</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/apGV9Kg7ics" target="_blank"><span
+                                class="badge b-yt">YT</span> Kunal Kushwaha – Git Full Course</a></div>
+                </div>
+            </div>
+
+            <div class="phase">
+                <div class="phase-header">Phase 4 — Backend (Node, Express, MongoDB, SQL)</div>
+                <div class="topic-row">
+                    <div class="topic-name">Databases – SQL vs NoSQL concepts</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/hlGoQC332VM" target="_blank"><span
+                                class="badge b-yt">YT</span> Apna College SQL Full Course</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">MongoDB – CRUD, relationships, deep dive</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/J6mDkcqU_ZE" target="_blank"><span
+                                class="badge b-yt">YT</span> Apna College MongoDB</a><a class="res-link"
+                            href="https://www.mongodb.com/docs/" target="_blank"><span class="badge b-doc">Docs</span>
+                            MongoDB Docs</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Node.js & npm basics</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/BLl32FvcdVM" target="_blank"><span
+                                class="badge b-yt">YT</span> Traversy – Node.js Crash Course</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Express.js & REST APIs</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/L72fhGm1tfE" target="_blank"><span
+                                class="badge b-yt">YT</span> Traversy – Express Crash Course</a><a class="res-link"
+                            href="https://expressjs.com/en/guide/routing.html" target="_blank"><span
+                                class="badge b-doc">Docs</span> Express Docs</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Routing, cookies, sessions</div>
+                    <div class="resources"><a class="res-link"
+                            href="https://expressjs.com/en/resources/middleware/session.html" target="_blank"><span
+                                class="badge b-doc">Docs</span> Express Sessions</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Middlewares deep dive</div>
+                    <div class="resources"><a class="res-link"
+                            href="https://expressjs.com/en/guide/using-middleware.html" target="_blank"><span
+                                class="badge b-doc">Docs</span> Express Middleware</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">EJS templating, MVC architecture</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/GM3XjHSlvYs" target="_blank"><span
+                                class="badge b-yt">YT</span> WebDevSimplified – EJS</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Authentication & authorization</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/mbsmsi7l3r4" target="_blank"><span
+                                class="badge b-yt">YT</span> WebDevSimplified – JWT Auth</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Error handling & validations</div>
+                    <div class="resources"><a class="res-link" href="https://expressjs.com/en/guide/error-handling.html"
+                            target="_blank"><span class="badge b-doc">Docs</span> Express Error Handling</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Cloudinary & MapBox / Geocoding</div>
+                    <div class="resources"><a class="res-link" href="https://cloudinary.com/documentation"
+                            target="_blank"><span class="badge b-doc">Docs</span> Cloudinary Docs</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Deployment with Render</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/MusIvEKjqsc" target="_blank"><span
+                                class="badge b-yt">YT</span> Deploy MERN to Render</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Docker & Kubernetes (project-based)</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/3c-iBn73dDE" target="_blank"><span
+                                class="badge b-yt">YT</span> TechWorld – Docker Full Course</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Socket.io & WebRTC (project-based)</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/ZKEqqIO7n-k" target="_blank"><span
+                                class="badge b-yt">YT</span> Traversy – Socket.io Crash Course</a></div>
+                </div>
+            </div>
+
+            <div class="phase">
+                <div class="phase-header">Major Projects — build all of these</div>
+                <div class="topic-row">
+                    <div class="topic-name">Airbnb clone (MERN, auth, listings)</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/5B1-O7HQLTE" target="_blank"><span
+                                class="badge b-yt">YT</span> Shradha – Wanderlust (Airbnb clone)</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Zerodha clone (stocks, AWS deploy)</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/LCaSRnuIlrE" target="_blank"><span
+                                class="badge b-yt">YT</span> Apna College – Zerodha MERN</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">ChatGPT clone (OpenAI API integration)</div>
+                    <div class="resources"><a class="res-link" href="https://platform.openai.com/docs"
+                            target="_blank"><span class="badge b-doc">Docs</span> OpenAI API Docs</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">LinkedIn clone (MERN social media)</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/hMnHPXz4emg" target="_blank"><span
+                                class="badge b-yt">YT</span> AS Dev – LinkedIn MERN Clone</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Zoom clone (WebRTC + Socket.io)</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/DvlyzDZDEq4" target="_blank"><span
+                                class="badge b-yt">YT</span> WebDevSimplified – Video Chat App</a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DSA -->
+        <div id="dsa" class="panel">
+            <div class="tip">The DSA track uses Java or C++. All Apna College DSA lectures are freely available on
+                YouTube. Practice every topic on LeetCode and GFG.</div>
+
+            <div class="phase">
+                <div class="phase-header">Phase 1 — Programming Fundamentals (Java or C++)</div>
+                <div class="topic-row">
+                    <div class="topic-name">Flowcharts & pseudocode</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/FfK6gRcau4U" target="_blank"><span
+                                class="badge b-yt">YT</span> Apna College – Flowcharts</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Variables, data types, operators</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/bm0OyhwFDuY" target="_blank"><span
+                                class="badge b-yt">YT</span> Apna College Java Full Course</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Conditional statements & loops</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/6MQn2uOc2yo" target="_blank"><span
+                                class="badge b-yt">YT</span> Apna College – Loops in Java</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Patterns (triangle, diamond, etc.)</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/QXRtBLPqEm0" target="_blank"><span
+                                class="badge b-yt">YT</span> Striver – All Patterns</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Functions & scope</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/bm0OyhwFDuY" target="_blank"><span
+                                class="badge b-yt">YT</span> Apna College Java (functions chapter)</a></div>
+                </div>
+            </div>
+
+            <div class="phase">
+                <div class="phase-header">Phase 2 — Core Data Structures & Algorithms</div>
+                <div class="topic-row">
+                    <div class="topic-name">Arrays & 2D Arrays</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/n60Dn0UsbEk" target="_blank"><span
+                                class="badge b-yt">YT</span> Apna College – Arrays</a><a class="res-link"
+                            href="https://leetcode.com/tag/array/" target="_blank"><span
+                                class="badge b-prac">Practice</span> LeetCode Arrays</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Sorting algorithms (Bubble, Merge, Quick)</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/HGk_ypEuS24" target="_blank"><span
+                                class="badge b-yt">YT</span> Apna College – Sorting</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Strings</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/zL1DPZ0Ovlo" target="_blank"><span
+                                class="badge b-yt">YT</span> Apna College – Strings</a><a class="res-link"
+                            href="https://leetcode.com/tag/string/" target="_blank"><span
+                                class="badge b-prac">Practice</span> LeetCode Strings</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Pointers (C++) / References (Java)</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/2ybLD6_2gKM" target="_blank"><span
+                                class="badge b-yt">YT</span> Apna College – Pointers</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Collections (Java) / STL (C++)</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/7gZi6RWQbJ8" target="_blank"><span
+                                class="badge b-yt">YT</span> Apna College – Collections Framework</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Time & Space Complexity (Big O)</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/FPu9Uld7W-E" target="_blank"><span
+                                class="badge b-yt">YT</span> Apna College – Complexity Analysis</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Recursion & Backtracking</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/M2uO2nMT0Bk" target="_blank"><span
+                                class="badge b-yt">YT</span> Apna College – Recursion</a><a class="res-link"
+                            href="https://leetcode.com/tag/backtracking/" target="_blank"><span
+                                class="badge b-prac">Practice</span> LeetCode Backtracking</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Divide & Conquer</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/11V7Ik0IBHU" target="_blank"><span
+                                class="badge b-yt">YT</span> Striver – Divide & Conquer</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">OOP (classes, inheritance, polymorphism)</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/BSVKUk58K6U" target="_blank"><span
+                                class="badge b-yt">YT</span> Apna College – OOPs in Java</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Linked Lists (singly, doubly, circular)</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/58YbpRDc4yw" target="_blank"><span
+                                class="badge b-yt">YT</span> Apna College – Linked Lists</a><a class="res-link"
+                            href="https://leetcode.com/tag/linked-list/" target="_blank"><span
+                                class="badge b-prac">Practice</span> LeetCode Linked List</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Stacks & Queues</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/GYptUgnIM_I" target="_blank"><span
+                                class="badge b-yt">YT</span> Apna College – Stacks & Queues</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Binary Trees & BST</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/4s1Tcvm00pA" target="_blank"><span
+                                class="badge b-yt">YT</span> Apna College – Trees</a><a class="res-link"
+                            href="https://leetcode.com/tag/binary-tree/" target="_blank"><span
+                                class="badge b-prac">Practice</span> LeetCode Trees</a></div>
+                </div>
+            </div>
+
+            <div class="phase">
+                <div class="phase-header">Phase 3 — Advanced DSA</div>
+                <div class="topic-row">
+                    <div class="topic-name">Heaps / Priority Queue</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/HqPJF2L5h9U" target="_blank"><span
+                                class="badge b-yt">YT</span> Apna College – Heaps</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">HashMaps & HashSets</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/KEs5UyBJ39g" target="_blank"><span
+                                class="badge b-yt">YT</span> Apna College – HashMaps</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Tries</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/qA8l8TAMyig" target="_blank"><span
+                                class="badge b-yt">YT</span> Striver – Tries</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Graphs (BFS, DFS, Dijkstra, etc.)</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/59fUtYYz7ZU" target="_blank"><span
+                                class="badge b-yt">YT</span> Apna College – Graphs Full Playlist</a><a class="res-link"
+                            href="https://leetcode.com/tag/graph/" target="_blank"><span
+                                class="badge b-prac">Practice</span> LeetCode Graphs</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Greedy Algorithms</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/HzeK7g8cD0Y" target="_blank"><span
+                                class="badge b-yt">YT</span> Striver – Greedy Algorithms</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Dynamic Programming</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/tyB0ztf0DNY" target="_blank"><span
+                                class="badge b-yt">YT</span> Apna College – DP Full Playlist</a><a class="res-link"
+                            href="https://leetcode.com/tag/dynamic-programming/" target="_blank"><span
+                                class="badge b-prac">Practice</span> LeetCode DP</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Segment Trees</div>
+                    <div class="resources"><a class="res-link" href="https://youtu.be/ZBHKZF5w4YU" target="_blank"><span
+                                class="badge b-yt">YT</span> Striver – Segment Trees</a></div>
+                </div>
+            </div>
+
+            <div class="phase">
+                <div class="phase-header">Always-on practice resources</div>
+                <div class="topic-row">
+                    <div class="topic-name">LeetCode – main practice platform</div>
+                    <div class="resources"><a class="res-link" href="https://leetcode.com/" target="_blank"><span
+                                class="badge b-prac">Practice</span> leetcode.com</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Striver's A2Z DSA Sheet (free roadmap)</div>
+                    <div class="resources"><a class="res-link"
+                            href="https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/"
+                            target="_blank"><span class="badge b-prac">Sheet</span> Striver A2Z Sheet</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">GeeksForGeeks practice</div>
+                    <div class="resources"><a class="res-link" href="https://practice.geeksforgeeks.org/"
+                            target="_blank"><span class="badge b-prac">Practice</span> GFG Practice</a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- QUANT -->
+        <div id="quant" class="panel">
+            <div class="tip">15-day sprint — covers aptitude for TCS, Wipro, Infosys, Goldman Sachs online tests. Start
+                this 3 weeks before any campus placement drive.</div>
+
+            <div class="phase">
+                <div class="phase-header">Topics with free resources</div>
+                <div class="topic-row">
+                    <div class="topic-name">Number systems, LCM/HCF</div>
+                    <div class="resources"><a class="res-link" href="https://www.indiabix.com/aptitude/numbers/"
+                            target="_blank"><span class="badge b-prac">Practice</span> IndiaBix – Numbers</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Percentages, profit & loss</div>
+                    <div class="resources"><a class="res-link" href="https://www.indiabix.com/aptitude/profit-and-loss/"
+                            target="_blank"><span class="badge b-prac">Practice</span> IndiaBix – Profit & Loss</a>
+                    </div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Time, speed & distance</div>
+                    <div class="resources"><a class="res-link"
+                            href="https://www.indiabix.com/aptitude/time-and-distance/" target="_blank"><span
+                                class="badge b-prac">Practice</span> IndiaBix – Time & Distance</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Time & work</div>
+                    <div class="resources"><a class="res-link" href="https://www.indiabix.com/aptitude/time-and-work/"
+                            target="_blank"><span class="badge b-prac">Practice</span> IndiaBix – Time & Work</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Ratios, averages, mixtures</div>
+                    <div class="resources"><a class="res-link"
+                            href="https://www.indiabix.com/aptitude/ratio-and-proportion/" target="_blank"><span
+                                class="badge b-prac">Practice</span> IndiaBix – Ratio & Proportion</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Permutations, combinations, probability</div>
+                    <div class="resources"><a class="res-link"
+                            href="https://www.indiabix.com/aptitude/permutation-and-combination/" target="_blank"><span
+                                class="badge b-prac">Practice</span> IndiaBix – P&C</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">TCS NQT mock tests (10 sample papers)</div>
+                    <div class="resources"><a class="res-link" href="https://www.prepinsta.com/tcs-nqt/"
+                            target="_blank"><span class="badge b-prac">Mock Tests</span> PrepInsta TCS NQT</a></div>
+                </div>
+                <div class="topic-row">
+                    <div class="topic-name">Logical reasoning & verbal ability</div>
+                    <div class="resources"><a class="res-link"
+                            href="https://www.indiabix.com/logical-reasoning/questions-and-answers/"
+                            target="_blank"><span class="badge b-prac">Practice</span> IndiaBix – Logical Reasoning</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TIMELINE -->
+        <div id="timeline" class="panel">
+            <div class="tip">Sigma 12 runs June 2, 2026 – mid Feb 2027. Alternate day schedule: Web Dev one day, DSA the
+                next. Follow this pacing.</div>
+            <div class="timeline">
+                <div class="tl-row">
+                    <div class="tl-month">Month 1</div>
+                    <div class="tl-bar">
+                        <div class="tl-title">HTML, CSS, JS Basics + Java/C++ Fundamentals</div>
+                        <div class="tl-detail">Web: HTML → CSS → Flexbox/Grid &nbsp;|&nbsp; DSA: Variables → Loops →
+                            Patterns → Functions</div>
+                    </div>
+                </div>
+                <div class="tl-row">
+                    <div class="tl-month">Month 2</div>
+                    <div class="tl-bar">
+                        <div class="tl-title">Bootstrap, Tailwind, Responsive + Arrays, Sorting, Strings</div>
+                        <div class="tl-detail">Web: Bootstrap → Tailwind → Responsive design &nbsp;|&nbsp; DSA: Arrays →
+                            Sorting → Strings → Big O Complexity</div>
+                    </div>
+                </div>
+                <div class="tl-row">
+                    <div class="tl-month">Month 3</div>
+                    <div class="tl-bar">
+                        <div class="tl-title">Core JavaScript + Recursion, Backtracking, OOPs</div>
+                        <div class="tl-detail">Web: DOM → Events → Async JS → Fetch API &nbsp;|&nbsp; DSA: Recursion →
+                            Backtracking → D&C → OOPs</div>
+                    </div>
+                </div>
+                <div class="tl-row">
+                    <div class="tl-month">Month 4</div>
+                    <div class="tl-bar">
+                        <div class="tl-title">React (full) + Linked Lists, Stacks, Queues</div>
+                        <div class="tl-detail">Web: React components → Props → State → Hooks &nbsp;|&nbsp; DSA: Linked
+                            Lists → Stacks → Queues</div>
+                    </div>
+                </div>
+                <div class="tl-row">
+                    <div class="tl-month">Month 5</div>
+                    <div class="tl-bar">
+                        <div class="tl-title">React Advanced + Trees, BST</div>
+                        <div class="tl-detail">Web: Custom Hooks → Material UI → Redux → Git &nbsp;|&nbsp; DSA: Binary
+                            Trees → BST</div>
+                    </div>
+                </div>
+                <div class="tl-row">
+                    <div class="tl-month">Month 6</div>
+                    <div class="tl-bar">
+                        <div class="tl-title">Node.js, Express, MongoDB + Heaps, HashMaps, Graphs</div>
+                        <div class="tl-detail">Web: Backend starts – Express → REST APIs → MongoDB &nbsp;|&nbsp; DSA:
+                            Heaps → HashMaps → Tries → Graphs</div>
+                    </div>
+                </div>
+                <div class="tl-row">
+                    <div class="tl-month">Month 7</div>
+                    <div class="tl-bar">
+                        <div class="tl-title">Full Stack Projects + Greedy, Dynamic Programming</div>
+                        <div class="tl-detail">Web: Auth → MVC → Deployment → Major Projects begin &nbsp;|&nbsp; DSA:
+                            Greedy → DP</div>
+                    </div>
+                </div>
+                <div class="tl-row">
+                    <div class="tl-month">Month 8</div>
+                    <div class="tl-bar">
+                        <div class="tl-title">Major Projects + Segment Trees + Quant Prep</div>
+                        <div class="tl-detail">Web: Airbnb, Zerodha, LinkedIn clones &nbsp;|&nbsp; DSA: Segment Trees +
+                            LeetCode grind &nbsp;|&nbsp; Quant: 15-day sprint</div>
+                    </div>
+                </div>
+                <div class="tl-row">
+                    <div class="tl-month">Month 9</div>
+                    <div class="tl-bar">
+                        <div class="tl-title">Wrap-up, Revisions, Mock Interviews</div>
+                        <div class="tl-detail">Finish remaining projects → Revise all DSA → Practice company PYQs →
+                            Resume polish</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
-    <div class="section-block">
-        <h3 id="css">CSS</h3>
-        <p>CSS stands for Cascading Style Sheets. It is a style sheet language used for describing the presentation of a
-            document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web,
-            alongside HTML and JavaScript.</p>
-    </div>
-
-    <div class="section-block">
-        <h3 id="javascript">JavaScript</h3>
-        <p>JavaScript, often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.
-            JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax,
-            dynamic typing, prototype-based object-orientation, and first-class functions.</p>
-    </div>
-
-    <h2>Back-end</h2>
-
-    <div class="section-block">
-        <h3 id="python">Python</h3>
-        <p>Python is an interpreted, high-level and general-purpose programming language. Python's design philosophy
-            emphasizes code readability with its notable use of significant whitespace. Its language constructs and
-            object-oriented approach aim to help programmers write clear, logical code for small and large-scale
-            projects.</p>
-    </div>
-
-    <div class="section-block">
-        <h3 id="nodejs">JavaScript (Node.js)</h3>
-        <p>Node.js is an open-source, cross-platform JavaScript runtime environment that executes JavaScript code
-            outside of a web browser. It is designed for building scalable network applications.</p>
-    </div>
-
-    <div class="section-block">
-        <h3 id="java">Java</h3>
-        <p>Java is a class-based, object-oriented programming language that is designed to have as few implementation
-            dependencies as possible. It is a general-purpose programming language intended to let programmers write
-            once, run anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java
-            without the need for recompilation.</p>
-    </div>
-
+    <script>
+        function show(id, el) {
+            document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.getElementById(id).classList.add('active');
+            el.classList.add('active');
+        }
+    </script>
 </body>
 </html>
